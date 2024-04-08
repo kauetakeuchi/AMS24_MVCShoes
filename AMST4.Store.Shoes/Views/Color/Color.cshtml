@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Color";
+}
+
+<h1>Choose shoe color</h1>
+<br>
+<button type="button" class="btn btn-outline-primary" onclick="changeTextColorBlue()">Color Changer Blue</button>
+<button type="button" class="btn btn-outline-danger" onclick="changeTextColorRed()">Color Changer Red</button>
+<button type="button" class="btn btn-outline-warning" onclick="changeTextColorYellow()">Color Changer Yellow</button>
+<button type="button" class="btn btn-outline-success" onclick="changeTextColorGreen()">Color Changer Green</button>
+<h3 id="text">Test Text</h3>
+
+<script>
+    function changeTextColorBlue() {
+        var text = document.getElementById("text");
+        text.style.color = text.style.color == "blue" ? "" : "blue";
+    }
+
+    function changeTextColorRed() {
+        var text = document.getElementById("text");
+        text.style.color = text.style.color == "red" ? "" : "red";
+    }
+
+    function changeTextColorYellow() {
+        var text = document.getElementById("text");
+        text.style.color = text.style.color == "yellow" ? "" : "yellow";
+    }
+
+    function changeTextColorGreen() {
+        var text = document.getElementById("text");
+        text.style.color = text.style.color == "green" ? "" : "green";
+    }
+</script>
